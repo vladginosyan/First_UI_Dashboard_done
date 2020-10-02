@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Redirect, Route, Router, Switch } from 'react-router-dom';
+import SideBar_1 from '../../components/Analytics/SideBar1';
 import Loader from '../../components/Loader';
 import useActions from '../../redux/actions';
 import * as AnalyticsActions from '../../redux/actions/analytics';
@@ -39,7 +40,8 @@ const Routes: React.FC<RoutesProps> = ({ isOwner, isProjectAvailable }) => {
     return (
       <div className={classes.content}>
         <Switch>
-          <Route exact path="/login" component={LoginPage} />
+        <Route exact path='/analitycs/PrometheusDashboard' component={SideBar_1} />
+          {/* <Route exact path="/login" component={LoginPage} /> */}
           <Route path="/" render={() => <Redirect to="/login" />} />
         </Switch>
       </div>
@@ -50,8 +52,8 @@ const Routes: React.FC<RoutesProps> = ({ isOwner, isProjectAvailable }) => {
     return (
       <div className={classes.content}>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/" render={() => <Redirect to="/" />} />
+          {/* <Route exact path="/" component={HomePage} /> */}
+          {/* <Route path="/" render={() => <Redirect to="/" />} /> */}
         </Switch>
       </div>
     );

@@ -23,9 +23,10 @@ const Welcomemodal: React.FC<WelcomemodalProps> = ({ handleIsOpen }) => {
   );
 
   return (
-    <Unimodal isOpen handleClose={handleClose} hasCloseBtn={false}>
-      {body}
-    </Unimodal>
+    <div></div>
+    // <Unimodal isOpen handleClose={handleClose} hasCloseBtn={false}>
+    //   {body}
+    // </Unimodal>
   );
 };
 
