@@ -1,0 +1,44 @@
+.contenier{
+    margin-right: 59px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.notificationIcone{
+    padding-right: 22.51px;
+}
+.elipse{
+    position: absolute;
+    margin-left: 11px;
+    width: 8px;
+    height: 8px; 
+    background: #52F995;
+    border-radius: 50%;
+}
+.infoUser{
+    padding-left: 20px;
+}
+.fullname{
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #F6B92B;
+margin: 0;
+padding:0;
+}
+.owner{
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #B9B9B9;
+margin: 0;
+padding:0;
+}
+
+.MuiTouchRipple-root{
+    color: rgba(45, 166, 96, 0.6);
+}
